@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  font-family: $font-text;
+  background-color: $bg-color;
+}

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background-color: #FCFFE7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 0 14px;
+  background-color: #FCFFE7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+header .logo {
+  font-family: "Oswald", sans-serif;
+}
+header .logo__text {
+  color: #2B3467;
+  font-size: 2.1rem;
+}
+header .nav-container {
+  display: none;
+}
+header .nav-container.menu {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+}
+header .nav-container.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  height: fit-content;
+  list-style: none;
+  align-self: center;
+  margin: 0 auto;
+}
+header .nav-container.menu ul .nav-container__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+header .nav-container.menu ul .active {
+  color: #EB455F;
+}
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */
