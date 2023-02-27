@@ -16,7 +16,13 @@ body {
   background-color: #FCFFE7;
 }
 
-header {
+main {
+  padding-top: 55px;
+}
+
+.first-header {
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,26 +32,26 @@ header {
   background-color: #FCFFE7;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
-header .logo {
+.first-header .logo {
   font-family: "Oswald", sans-serif;
 }
-header .logo__text {
-  color: #2B3467;
+.first-header .logo__text {
+  color: #000;
   font-size: 2.1rem;
 }
-header .nav-container {
+.first-header .nav-container {
   display: flex;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(230, 230, 230, 0.25);
-  backdrop-filter: blur(1.7px);
+  background-color: rgba(43, 52, 103, 0.2117647059);
+  backdrop-filter: blur(2.7px);
   margin-left: -100%;
   transition: all 0.5s ease;
 }
-header .nav-container ul {
+.first-header .nav-container ul {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -54,23 +60,67 @@ header .nav-container ul {
   align-self: center;
   margin: 0 auto;
 }
-header .nav-container ul .nav-container__link {
+.first-header .nav-container ul .nav-container__link {
   font-weight: 700;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.4);
 }
-header .nav-container ul .active {
+.first-header .nav-container ul .nav-container__link:hover {
+  text-shadow: 0 0 19px #9f9f9f;
+  color: #EB455F;
+  transition: all 0.5s ease;
+}
+.first-header .nav-container ul .active {
   color: #EB455F;
 }
-header .nav-container.menu {
+.first-header .nav-container.menu {
   margin-left: 0;
   transition: all 0.5s ease;
 }
-header .menu-burger {
+.first-header .menu-burger {
   width: 40px;
   height: 40px;
   cursor: pointer;
   z-index: 1;
+}
+
+.inicio .inicio__tittle {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 46px;
+  padding: 6px 14px;
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 3.9rem;
+  font-family: "Oswald", sans-serif;
+  color: #2B3467;
+}
+.inicio .inicio__tittle .inicio__icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: bottom;
+  margin-bottom: 2px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3934/3934021.png");
+}
+.inicio .inicio__descrip {
+  margin-top: 20px;
+  padding: 0 14px;
+  line-height: 22px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #5c5c5c;
+}
+.inicio .inicio__descrip b {
+  background-color: #000;
+  color: white;
+  padding: 0 4px;
 }
 
 /*# sourceMappingURL=main.css.map */
