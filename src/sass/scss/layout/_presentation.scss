@@ -1,0 +1,46 @@
+@use '../utilities/variables' as *;
+
+.inicio {
+  .inicio__tittle {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 46px;
+    padding: 6px 14px;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4rem;
+    font-family: $font-title;
+    color: $primary-color;
+
+    .inicio__icon {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      vertical-align: bottom;
+      margin-bottom: 2px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3934/3934021.png');
+    }
+  }
+
+  .inicio__descrip {
+    margin-top: 20px;
+    padding: 0 14px;
+    line-height: 22px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $p-color;
+
+    b {
+      background-color: #000;
+      color: white;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+  }
+}
