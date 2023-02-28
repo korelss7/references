@@ -1,6 +1,6 @@
 @use '../utilities/variables' as *;
 
-.first-header {
+header {
   position: fixed;
   top: 0;
   display: flex;
@@ -11,17 +11,6 @@
   padding: 0 14px;
   background-color: $bg-color;
   box-shadow: 0 5px 10px rgb(0,0,0,0.12);
-
-  .logo {
-    font-family: $font-title;
-
-    &__text {
-      color: #000;
-      font-size: 2.1rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  }
 
   .nav-container {
     display: flex;
@@ -73,4 +62,13 @@
     border: 1px solid black;
     border-radius: 7px;
   }
+}
+
+.logo__text {
+  font-family: $font-title;
+  color: #000;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -20,7 +20,7 @@ main {
   padding-top: 55px;
 }
 
-.first-header {
+header {
   position: fixed;
   top: 0;
   display: flex;
@@ -32,16 +32,7 @@ main {
   background-color: #FCFFE7;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
-.first-header .logo {
-  font-family: "Oswald", sans-serif;
-}
-.first-header .logo__text {
-  color: #000;
-  font-size: 2.1rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-.first-header .nav-container {
+header .nav-container {
   display: flex;
   position: absolute;
   left: 0;
@@ -53,7 +44,7 @@ main {
   margin-left: -100%;
   transition: all 0.5s ease;
 }
-.first-header .nav-container ul {
+header .nav-container ul {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -62,23 +53,23 @@ main {
   align-self: center;
   margin: 0 auto;
 }
-.first-header .nav-container ul .nav-container__link {
+header .nav-container ul .nav-container__link {
   font-weight: 700;
   text-decoration: none;
   color: #fff;
 }
-.first-header .nav-container ul .nav-container__link:hover {
+header .nav-container ul .nav-container__link:hover {
   color: #EB455F;
   transition: all 0.5s ease;
 }
-.first-header .nav-container ul .active {
+header .nav-container ul .active {
   color: #EB455F;
 }
-.first-header .nav-container.menu {
+header .nav-container.menu {
   margin-left: 0;
   transition: all 0.5s ease;
 }
-.first-header .menu-burger {
+header .menu-burger {
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -86,6 +77,15 @@ main {
   background-color: #FCFFE7;
   border: 1px solid black;
   border-radius: 7px;
+}
+
+.logo__text {
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .inicio .inicio__tittle {
@@ -126,6 +126,43 @@ main {
   color: white;
   padding: 0 4px;
   border-radius: 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #575757;
+  color: #fff;
+  padding: 12px 0;
+  margin-top: 30px;
+}
+footer .project {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 14px;
+}
+footer .project .logo__text {
+  color: white;
+}
+footer .project .red {
+  display: flex;
+  column-gap: 15px;
+}
+footer .project .red .red__icon {
+  width: 30px;
+  height: 30px;
+}
+footer .project .red .red__icon img {
+  width: inherit;
+  height: inherit;
+}
+footer .creador {
+  font-size: 15px;
+  font-weight: 700;
+  color: #e2e2e2;
 }
 
 /*# sourceMappingURL=main.css.map */
